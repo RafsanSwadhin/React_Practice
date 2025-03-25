@@ -1,6 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .headingStyle{
     background-color: rgb(18, 226, 60);
     text-align: center;
     padding: 15px;
     color: white;
+}
+
+.largeText {
+    font-size: 4rem;
+}
+
+.card{
+    background-color: #ffda77;
+    box-shadow: 2px 4px 4px gray;
 }

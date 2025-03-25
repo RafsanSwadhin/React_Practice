@@ -1,3 +1,20 @@
+public/style.css
+
+.headingStyle{
+    background-color: rgb(18, 226, 60);
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.largeText {
+    font-size: 4rem;
+}
+
+then go to main.jsx
+in this file we do not have to import css file cz this file is in the public folder.
+otherwise we have to import this css file...
+
 import { StrictMode } from 'react'
 import React from 'react'
 import { createRoot } from 'react-dom/client'
@@ -24,11 +41,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
    <div>
     <h1 className='headingStyle largeText'>Todo App</h1>
-    <div className='card'>
-    <h3 className='cardTitle'>{todoTitle}</h3>
-    <p className='cardDesc'>{todoDesc}</p>
-    <p className='cardFooter'>{dateName+ "/" +monthName+"/"+currentYear}</p>
-    </div>
+    <h3>{todoTitle}</h3>
+    <p>{todoDesc}</p>
+    <p>{dateName+ "/" +monthName+"/"+currentYear}</p>
    </div>
   </StrictMode>,
 )
