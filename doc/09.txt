@@ -1,0 +1,29 @@
+functional components
+
+Card1.jsx
+
+function Card1(props){
+    return (
+        <div>
+            <h3>{props.name}</h3>
+            <p>{props.desc}</p>
+        </div>
+    )
+}
+export default Card1
+
+in app.jsx
+
+
+import React from "react";
+import Card1 from "./components/Card1";
+
+function App(){
+  return (
+    <div>
+      <Card1 name = "card1" desc = "this is card1"/>
+    </div>
+  )
+}
+
+export default App;
