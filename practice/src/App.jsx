@@ -1,9 +1,9 @@
 import React from "react";
-import State from "./State";
+import Condition from "./condition";
 function App(){
   return (
     <div>
-      <State count = "0"/>
+    <Condition/>
     </div>
   )
 }

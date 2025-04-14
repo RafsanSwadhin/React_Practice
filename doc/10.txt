@@ -1,3 +1,8 @@
+state
+
+in stat.jsx
+
+
 import React,{Component} from "react";
 
 export default class State extends Component{
@@ -28,3 +33,18 @@ export default class State extends Component{
         )
     }
 }
+
+
+in app.jsx
+
+import React from "react";
+import State from "./State";
+function App(){
+  return (
+    <div>
+      <State count = "0"/>
+    </div>
+  )
+}
+
+export default App;
