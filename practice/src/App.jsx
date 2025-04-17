@@ -1,9 +1,10 @@
 import React from "react";
-import Hooks_UseState_ from "./hooks";
+import Form from "./components/FORM/Form.jsx"
+
 function App(){
   return (
     <div>
-    <Hooks_UseState_/>
+    <Form/>
     </div>
   )
 }
