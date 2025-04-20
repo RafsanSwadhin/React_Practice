@@ -1,0 +1,39 @@
+from app.jsx
+
+
+import React from "react";
+import Child from "./components/State_Lifting/Child"
+function App(){
+  const data = "I am from parent"
+  const handleChildData = (childData) =>{
+    console.log(childData)
+  }
+  return (
+            <div>
+              <Child data = {data} onChildData = {handleChildData}/>
+            </div>
+  )
+}
+
+export default App;
+
+from child.jsx
+
+
+import React from "react";
+
+const Child = (props) =>{
+    const data = "I am from Child"
+    props.onChildData(data)
+
+
+    return (
+        <div>
+            <p>I am child component</p>
+            <p>{props.data}</p>
+        </div>
+    )
+}
+
+export default Child
+

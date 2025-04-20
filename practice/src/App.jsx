@@ -1,13 +1,16 @@
 import React from "react";
-import Child from "./components/State_Lifting/Child"
+import Todo from "./Todo";
+import NewTodo from "./NewTodo";
+
 function App(){
-  const data = "I am from parent"
-  const handleChildData = (childData) =>{
-    console.log(childData)
+
+  const handleNewTodo = (newTodo) =>{
+    console.log(newTodo)
   }
   return (
             <div>
-              <Child data = {data} onChildData = {handleChildData}/>
+              <NewTodo onHandleNewTodo={handleNewTodo}/>
+            <Todo title="learn react"/>
             </div>
   )
 }
