@@ -1,11 +1,14 @@
 import React from "react";
-import Form from "./components/Form/Form";
-
+import Child from "./components/State_Lifting/Child"
 function App(){
+  const data = "I am from parent"
+  const handleChildData = (childData) =>{
+    console.log(childData)
+  }
   return (
-    <div>
-    <Form/>
-    </div>
+            <div>
+              <Child data = {data} onChildData = {handleChildData}/>
+            </div>
   )
 }
 
