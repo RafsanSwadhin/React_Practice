@@ -1,16 +1,13 @@
 import React from "react";
-import Todo from "./Todo";
-import NewTodo from "./NewTodo";
+import Home from "./State_Lifting/Home";
+
 
 function App(){
 
-  const handleNewTodo = (newTodo) =>{
-    console.log(newTodo)
-  }
   return (
             <div>
-              <NewTodo onHandleNewTodo={handleNewTodo}/>
-            <Todo title="learn react"/>
+
+            <Home/>
             </div>
   )
 }
