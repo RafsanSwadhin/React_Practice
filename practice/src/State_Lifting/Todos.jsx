@@ -2,7 +2,7 @@ import React from "react";
 
 const Todos = (props) =>{
     return <div>
-<h1>{props.todos}</h1>
+<h1>hello</h1>
     </div>
 }
 
