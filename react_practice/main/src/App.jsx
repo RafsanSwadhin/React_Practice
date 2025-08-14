@@ -1,25 +1,33 @@
 import { useState } from 'react'
 
 import './App.css'
-import Service from './components/Service'
-import Dynamic from './components/Dynamic'
-import Navigation from './components/Navigation'
+
 
 
 function App() {
 
+const [ price , setPrice] = useState(10)
+const increaseHandle = () =>{
+  const newPrice= price + 1;
+  setPrice(newPrice)
+}
+
+
+const dicreaseHandle = () =>{
+  const newPrice= price - 1;
+  setPrice(newPrice)
+}
 
   return (
     <div>
+        <h1>Price: {price}</h1>
+        <button onClick={increaseHandle} >Increase</button> &nbsp; &nbsp; <button onClick={
+          dicreaseHandle
+        }>Decrease</button> 
 
-<Navigation></Navigation>
+        <p>Price: {price}</p>
 
 
-      {/* <Service></Service>
-      <Dynamic name = "Rafsan"></Dynamic>
-      <Dynamic name = "Jani"></Dynamic>
-      <Dynamic name = "Ahmed"></Dynamic>
-      <Dynamic name = "Swadhin"></Dynamic> */}
     </div>
   )
 }
