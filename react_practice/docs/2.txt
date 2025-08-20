@@ -1,0 +1,31 @@
+useState 
+
+function App() {
+
+const [ price , setPrice] = useState(10)
+const increaseHandle = () =>{
+  const newPrice= price + 1;
+  setPrice(newPrice)
+}
+
+
+const dicreaseHandle = () =>{
+  const newPrice= price - 1;
+  setPrice(newPrice)
+}
+
+  return (
+    <div>
+        <h1>Price: {price}</h1>
+        <button onClick={increaseHandle} >Increase</button> &nbsp; &nbsp; <button onClick={
+          dicreaseHandle
+        }>Decrease</button> 
+
+        <p>Price: {price}</p>
+
+
+    </div>
+  )
+}
+
+export default App

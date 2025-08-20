@@ -1,35 +1,28 @@
-import { useState } from 'react'
-
 import './App.css'
+import React, { useEffect, useState } from 'react'
+import SingleData from './components/SingleData';
 
-
-
-function App() {
-
-const [ price , setPrice] = useState(10)
-const increaseHandle = () =>{
-  const newPrice= price + 1;
-  setPrice(newPrice)
-}
-
-
-const dicreaseHandle = () =>{
-  const newPrice= price - 1;
-  setPrice(newPrice)
-}
-
+const App = () => {
+  const [allData,setAllData]=useState([]);
+  useEffect(() =>{
+    fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(data => setAllData(data))
+  },[])
   return (
     <div>
-        <h1>Price: {price}</h1>
-        <button onClick={increaseHandle} >Increase</button> &nbsp; &nbsp; <button onClick={
-          dicreaseHandle
-        }>Decrease</button> 
-
-        <p>Price: {price}</p>
-
+        <h1>Data:{allData.length}</h1>
+        {
+          allData.map(singleData => <SingleData
+          key = {singleData.id}
+          singleData = {singleData}
+          ></SingleData>)
+        }
 
     </div>
   )
 }
 
 export default App
+
+
