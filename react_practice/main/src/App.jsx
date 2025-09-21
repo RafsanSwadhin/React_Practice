@@ -1,28 +1,9 @@
-import './App.css'
-import React, { useEffect, useState } from 'react'
-import SingleData from './components/SingleData';
+import React from 'react'
 
-const App = () => {
-  const [allData,setAllData]=useState([]);
-  useEffect(() =>{
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(res => res.json())
-    .then(data => setAllData(data))
-  },[])
+function App() {
   return (
-    <div>
-        <h1>Data:{allData.length}</h1>
-        {
-          allData.map(singleData => <SingleData
-          key = {singleData.id}
-          singleData = {singleData}
-          ></SingleData>)
-        }
-
-    </div>
+    <div>App</div>
   )
 }
 
 export default App
-
-
