@@ -1,9 +1,21 @@
-import React, { useEffect } from 'react'
-
+import React, { useEffect, useState } from 'react'
+import Product from '../Product/Productss'
 const Product = () => {
-    useEffect(() => {},[])
+  const [products, setProducts] = useState([])
+    useEffect(() => {
+      fetch('fakeData.json')
+      .then(res=> res.json())
+      .then(data => console.log(data))
+    },[])
   return (
-    <div>Product</div>
+    <div>Product
+    {
+      products.map(product => <Product
+      key = {product.id}
+      product   = {product}
+      ></Product> )
+    }
+    </div>
   )
 }
 

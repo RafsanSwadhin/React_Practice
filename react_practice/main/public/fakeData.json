@@ -1,6 +1,54 @@
 {
-   "Student" :{
-        "name":"Rafsam",
-        "roll": 44
-    }
+    "students": [
+        {
+            "id": 1,
+            "name": "Rafsan",
+            "roll": 44
+        },
+        {
+            "id": 2,
+            "name": "Sakib",
+            "roll": 12
+        },
+        {
+            "id": 3,
+            "name": "Nayeem",
+            "roll": 21
+        },
+        {
+            "id": 4,
+            "name": "Tasnim",
+            "roll": 15
+        },
+        {
+            "id": 5,
+            "name": "Arif",
+            "roll": 33
+        },
+        {
+            "id": 6,
+            "name": "Mahin",
+            "roll": 27
+        },
+        {
+            "id": 7,
+            "name": "Fahim",
+            "roll": 18
+        },
+        {
+            "id": 8,
+            "name": "Jahid",
+            "roll": 40
+        },
+        {
+            "id": 9,
+            "name": "Mehedi",
+            "roll": 25
+        },
+        {
+            "id": 10,
+            "name": "Rakib",
+            "roll": 31
+        }
+    ]
 }
