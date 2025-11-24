@@ -1,2 +1,14 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+* {
+    font-family: "poppins",sans-serif;
+}
+
+.cr{
+    color:rgb(8, 110, 110)
+}
+
+.bc{
+    background-color:rgb(28, 205, 81)
+}
