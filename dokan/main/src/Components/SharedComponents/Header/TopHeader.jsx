@@ -12,7 +12,7 @@ const TopHeader = () => {
 
           {/* LEFT SIDE */}
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-1">+
               <TbPhoneRinging />
               <p className="text-[12px]">01478523699</p>
             </div>
