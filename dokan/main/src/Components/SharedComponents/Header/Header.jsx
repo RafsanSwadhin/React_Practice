@@ -5,8 +5,8 @@ import Navbar from './Navbar'
 
 const Header = () => {
   return (
-    <div className>
-<div className='container'>
+    <div className='container'>
+<div >
           <TopHeader></TopHeader>
         <MidHeader></MidHeader>
         <Navbar ></Navbar>
@@ -14,5 +14,4 @@ const Header = () => {
     </div>
   )
 }
-
 export default Header

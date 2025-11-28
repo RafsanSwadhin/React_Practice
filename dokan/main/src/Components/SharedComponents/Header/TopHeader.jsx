@@ -4,7 +4,7 @@ import { SiWhatsapp } from "react-icons/si";
 
 const TopHeader = () => {
   return (
-    <div className="bg-[#F8F8FB] py-2 text-[#818181]">
+    <div className="bg-[#F8F8FB] container py-2 text-[#818181]">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Main Flex Row */}
@@ -12,7 +12,8 @@ const TopHeader = () => {
 
           {/* LEFT SIDE */}
           <div className="flex items-center gap-4">
-            <div className="flex items-center gap-1">+
+
+            <div className="flex items-center gap-1">
               <TbPhoneRinging />
               <p className="text-[12px]">01478523699</p>
             </div>
@@ -21,6 +22,7 @@ const TopHeader = () => {
               <SiWhatsapp />
               <p className="text-[12px]">95201478536</p>
             </div>
+
           </div>
 
           {/* CENTER SIDE */}

@@ -23,14 +23,27 @@ const MidHeader = () => {
   <input type="search" required placeholder="Search" />
 </label>
         </div>
-        <div>
-          <div>
-                <FaRegUser />
+        <div className='flex gap-2'>
+          <div className='flex items-center gap-2'>
+                <FaRegUser className='text-2xl'/>
                 <div>
-                  <p>ACCOUNT</p>
-                  <p>Log in</p>
+                  <p className='tc text-xl'> ACCOUNT</p>
+                  <p className='tc text-xs'>Log in</p>
                 </div>
+
+                
           </div>
+
+           <div className='flex items-center gap-2'>
+                <FaRegUser className='text-2xl'/>
+                <div>
+                  <p className='tc text-xl'> Add To Cart</p>
+                  <p className='tc text-xs'>Log in</p>
+                </div>
+
+                
+          </div>
+
         </div>
       </div>
     </div>
