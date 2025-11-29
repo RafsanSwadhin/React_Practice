@@ -6,7 +6,7 @@
 }
 
 .cr{
-    color:rgb(8, 110, 110)
+    color:rgb(5, 133, 24)
 }
 
 .tc{
@@ -14,4 +14,11 @@
 }
 .topBG{
     color: #a64f4f ;
+}
+.bg{
+    background-color: rgb(21, 229, 125);
+}
+
+.txc{
+    color: rgb(255, 254, 252);
 }
